@@ -1,0 +1,8 @@
+Using device: cuda:0
+Noise level: 0.15
+Image 1: N. PSNR: 14.3597 - N. RMSE: 228.3873 - PSNR: 30.8779 - RMSE: 50.1776 - time: 6.1855e-01
+Image 2: N. PSNR: 14.3297 - N. RMSE: 141.8280 - PSNR: 31.8147 - RMSE: 28.8680 - time: 5.2537e-01
+PSNR: 31.3463 - RMSE: 39.5228 - time: 5.7196e-01 - Noisy PSNR: 14.3447 - Noisy RMSE: 185.1077
+
+IXI093
+IXI102

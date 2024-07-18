@@ -1,0 +1,69 @@
+---
+model:
+  input channels: 1
+  base filters: 64
+  groups: 1
+  dense convolutions: 2
+  downsampling: 'Conv2'
+  residual: true
+  sequence: 'PD'
+  normalization constant: 63.75  # 255.0
+train:
+  noise level: 0.15
+  patch size: 32
+  epochs: 51
+  dataset splits: 10
+  batch size: 16
+  learning rate: 1.e-3
+  weight decay: 1.e-2
+  grad clip: 1.0
+  scheduler gamma: 0.5
+  scheduler step: 5
+  device: cuda:0
+  ## Cluster params:
+  multi gpu: true
+  workers: 48
+  verbose: false
+  dataset path: '../../Dataset/IXI-'
+  checkpoint path: '../Checkpoints'
+  ## Local params:
+  # multi gpu: false
+  # workers: 10
+  # verbose: true
+  # dataset path: '/mnt/Storage/Documents/BrainDenoising/IXI-'
+  # checkpoint path: '/mnt/Storage/Documents/BrainDenoising/Denoiser3D_gru_v2/Checkpoints'
+val:
+  noise level: 0.09
+  patch size: 32
+  batch size: 256 # 64
+  frequency: 5
+test:
+  noise levels:
+    - 0.01
+    - 0.03
+    - 0.05
+    - 0.07
+    - 0.09
+    - 0.11
+    - 0.13
+    - 0.15
+  ## Local parameters
+  # brainweb dataset path: '/mnt/Storage/Documents/BrainDenoising/Brainweb'
+  # brainweb results path: '/mnt/Storage/Documents/BrainDenoising/Denoiser3D_gru/Results/Brainweb'
+  # ixi dataset path: '/mnt/Storage/Documents/BrainDenoising/IXI-'
+  # ixi results path: '/mnt/Storage/Documents/BrainDenoising/Denoiser3D_gru/Results/IXI-'
+  # pretrained models path: '/mnt/Storage/Documents/BrainDenoising/Denoiser3D_gru/Pretrained'
+  # save images: false
+  # device: cpu
+  # plot figures: false
+  ## Cluster parameters
+  brainweb dataset path: '../../Dataset/BrainwebRaw'
+  brainweb results path: '../Results/Brainweb'
+  ixi dataset path: '../../Dataset/IXI-'
+  ixi results path: '../Results/IXI-'
+  pretrained models path: '../Pretrained'
+  save images: true
+  device: cuda:0
+  ensemble: true
+  plot figures: false
+...

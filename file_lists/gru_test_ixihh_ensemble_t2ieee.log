@@ -1,0 +1,12 @@
+Using device: cuda:0
+Noise level: 0.15
+image shape: torch.Size([1, 1, 130, 256, 256])- time: 0.18591
+Image 1: N. PSNR: 14.3597 - N. SSIM: 0.1180 - N. RMSE: 240.2674 - PSNR: 30.3993 - SSIM: 0.7041 - RMSE: 53.0198 - time: 1.8591e-01
+image shape: torch.Size([1, 1, 130, 256, 256])- time: 0.00574
+Image 2: N. PSNR: 14.3297 - N. SSIM: 0.1199 - N. RMSE: 152.3974 - PSNR: 32.5942 - SSIM: 0.8667 - RMSE: 26.3902 - time: 5.7378e-03
+noise_level: 0.150 - average time: 0.09582
+PSNR: 31.4967 - SSIM: 0.7854 - RMSE: 39.7050 - time: 0.09582 - Noisy PSNR: 14.3447 - Noisy SSIM: 0.1189 - Noisy RMSE: 196.3324
+
+
+IXI093
+IXI102

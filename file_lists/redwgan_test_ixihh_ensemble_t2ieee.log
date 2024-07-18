@@ -1,0 +1,9 @@
+Using device: cpu
+Noise level: 0.15
+Image 1: N. PSNR: 14.3597 - N. SSIM: 0.1180 - N. RMSE: 228.3873 - PSNR: 28.2919 - SSIM: 0.7942 - RMSE: 67.5781 - time: 5.6952e+01
+Image 2: N. PSNR: 14.3297 - N. SSIM: 0.1199 - N. RMSE: 141.8280 - PSNR: 29.6366 - SSIM: 0.8245 - RMSE: 37.0957 - time: 5.6631e+01
+PSNR: 28.9642 - SSIM: 0.8093 - RMSE: 52.3369 - time: 5.6792e+01 - Noisy PSNR: 14.3447 - Noisy SSIM: 0.1189 - Noisy RMSE: 185.1077
+
+
+IXI093
+IXI102
